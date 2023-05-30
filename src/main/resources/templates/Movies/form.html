@@ -9,24 +9,25 @@
     <header>
         <h1>Film Registration</h1>
     </header>
-<div class="container">
-    <div id="formAddMovies">
+        <form method="post">
+            <label for="movie-name">Movie name: </label>
+            <input type="text" name="name" id="movie-name">
+            <br/>
+            <label for="movie-duration">Movie duration: </label>
+            <input type="text" name="duration" id="movie-duration">
+            <br/>
+            <label for="movie-realease-date">Realease date movie: </label>
+            <input type="number" name="realeaseDate" id="movie-realease-date">
+            <br/>
+            <label for="movie-gender">Movie gender: </label>
+            <input type="text" name="gender" id="movie-gender">
+            <br/>
+            <input type="submit" value="Register">
 
-        <label for="movie-name">Movie name: </label>
-        <input type="text" name="name" id="movie-name"> 
+        </form>
 
-        <label for="movie-duration">Movie duration: </label>
-        <input type="text" name="duration" id="movie-duration">
 
-        <label for="movie-synopsis">Movie synopsis: </label>
-        <input type="text" name="synopsis" id="movie-synopsis">        
-        <label for="movie-gender">Movie gender: </label>
-        <input type="text" name="gender" id="movie-gender">
 
-        <input type="submit" value="Register">
-
-    </div>
-</div>
 
 
 </body>
