@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>List movies</title>
 </head>
+
 <body>
     <table>
         <thead>
-            <tr>Name</tr>
-            <tr>Duration</tr>
-            <tr>Realease date</tr>
-            <tr>Gender</tr>
+            <tr>
+                <th>Name</th>
+                <th>Duration</th>
+                <th>Realease date</th>
+                <th>Gender</th>
+            </tr>
         </thead>
         <tbody>
-            
+            <tr th:each="movies: ${list}">
+                <td th:text="${movies.name}"></td>
+                <td th:text="${movies.duration}"></td>
+                <td th:text="${movies.realeaseDate}"></td>
+                <td th:text="${movies.gender}"></td>
+            </tr>
         </tbody>
     </table>
 </body>
+
 </html>
